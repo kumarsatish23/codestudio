@@ -23,7 +23,11 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   color: #eb540f; }
-
+.technique-four {
+  	width: 200px; height: 75px;
+  	background: url("images/logo.png");
+  	position: relative;
+  }
 .position-relative {
   position: relative !important; }
 
