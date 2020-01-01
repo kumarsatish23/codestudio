@@ -132,7 +132,7 @@
           <div class="col-lg-6 person">
             <h5><span>T-shirts</span></h5>
             <iframe src="https://drive.google.com/embeddedfolderview?id=1S13lyYe3mKByNlOUyprrfGreJ1SuiZxc#grid" width="100%" height="400px" frameborder="0" allowfullscreen scrolling="auto"></iframe>
-            <p><br><a href="" class="btn btn-outline-primary btn-md">Enquire us</a></p>
+            <p><br><a href="#contact-section" class="btn btn-outline-primary btn-md">Enquire us</a></p>
 
           </div>
         </div>
@@ -144,12 +144,12 @@
               <div class="col-lg-6 mb-5 person">
                 <h5><span>Chocolates & Cakes</span></h5>
                 <iframe src="https://drive.google.com/embeddedfolderview?id=1cdRxXoexSgyXxcNaoVqd-HbN3jKrfCDi#grid" width="100%" height="400px" frameborder="0" allowfullscreen scrolling="auto"></iframe>
-                <p><br><a href="" class="btn btn-outline-primary btn-md">Enquire us</a></p>
+                <p><br><a href="#contact-section" class="btn btn-outline-primary btn-md">Enquire us</a></p>
               </div>
               <div class="col-lg-6 person">
                 <h5><span>Frames</span></h5>
                 <iframe src="https://drive.google.com/embeddedfolderview?id=1BrS-r9ATefhsqimhAS4rPFj7PRV5BcMn#grid" width="100%" height="400px" frameborder="0" allowfullscreen scrolling="auto"></iframe>
-                <p><br><a href="" class="btn btn-outline-primary btn-md">Enquire us</a></p>
+                <p><br><a href="#contact-section" class="btn btn-outline-primary btn-md">Enquire us</a></p>
               </div>
             </div>
           </div>
@@ -160,12 +160,12 @@
                   <div class="col-lg-6 mb-5 person">
                     <h5><span>Mugs & Bottles</span></h5>
                     <iframe src="https://drive.google.com/embeddedfolderview?id=1gXaL69R-nm8BnuvItSydJiB8D9m-xZ6m#grid" width="100%" height="400px" frameborder="0" allowfullscreen scrolling="auto"></iframe>
-                    <p><br><a href="" class="btn btn-outline-primary btn-md">Enquire us</a></p>
+                    <p><br><a href="#contact-section" class="btn btn-outline-primary btn-md">Enquire us</a></p>
                   </div>
                   <div class="col-lg-6 person">
                     <h5><span>Office accessories</span></h5>
                     <iframe src="https://drive.google.com/embeddedfolderview?id=1f6VSnnaZl-oFex_jloqz86uaKMz51BNb#grid" width="100%" height="400px" frameborder="0" allowfullscreen scrolling="auto"></iframe>
-                    <p><br><a href="" class="btn btn-outline-primary btn-md">Enquire us</a></p>
+                    <p><br><a href="#contact-section" class="btn btn-outline-primary btn-md">Enquire us</a></p>
                   </div>
                 </div>
               </div>
@@ -176,12 +176,12 @@
                       <div class="col-lg-6 mb-5 person">
                         <h5><span>Badges, Pens and Lapel Pins</span></h5>
                         <iframe src="https://drive.google.com/embeddedfolderview?id=1Hhv0uYRpX2sJTP0vIQCo56vYebrvD-d_#grid" width="100%" height="400px" frameborder="0" allowfullscreen scrolling="auto"></iframe>
-                        <p><br><a href="" class="btn btn-outline-primary btn-md">Enquire us</a></p>
+                        <p><br><a href="#contact-section" class="btn btn-outline-primary btn-md">Enquire us</a></p>
                       </div>
                       <div class="col-lg-6 person">
                         <h5><span>Wall Clocks</span></h5>
                         <iframe src="https://drive.google.com/embeddedfolderview?id=1waADJL5YrEoudHCNo1Q0yheKzXIUP3L7#grid" width="100%" height="400px" frameborder="0" allowfullscreen scrolling="auto"></iframe>
-                        <p><br><a href="" class="btn btn-outline-primary btn-md">Enquire us</a></p>
+                        <p><br><a href="#contact-section" class="btn btn-outline-primary btn-md">Enquire us</a></p>
                       </div>
                     </div>
                   </div>
@@ -192,12 +192,12 @@
                           <div class="col-lg-6 mb-5 person">
                             <h5><span>Wallpapers</span></h5>
                             <iframe src="https://drive.google.com/embeddedfolderview?id=14MSYhocQI2c0lJ9M1dEOJsYx8kzhOda5#grid" width="100%" height="400px" frameborder="0" allowfullscreen scrolling="auto"></iframe>
-                            <p><br><a href="" class="btn btn-outline-primary btn-md">Enquire us</a></p>
+                            <p><br><a href="#contact-section" class="btn btn-outline-primary btn-md">Enquire us</a></p>
                           </div>
                           <div class="col-lg-6 person">
                             <h5><span>Others</span></h5>
                             <iframe src="https://drive.google.com/embeddedfolderview?id=1139WF4G3Xys_2agfQhUIKBDQmmlH9N9T#grid" width="100%" height="400px" frameborder="0" allowfullscreen scrolling="auto"></iframe>
-                            <p><br><a href="" class="btn btn-outline-primary btn-md">Enquire us</a></p>
+                            <p><br><a href="#contact-section" class="btn btn-outline-primary btn-md">Enquire us</a></p>
                           </div>
                         </div>
                       </div>
@@ -287,6 +287,23 @@
                   <input type="hidden" name="pageHistory" value="0">
 
                   <input class="btn btn-primary btn-md" type="submit" value="Submit">
+                  <script>
+                  $('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            alert('Form Submitted. Thanks.')
+            // You can also redirect the user to a custom thank-you page:
+            // window.location = 'http://www.mydomain.com/thankyoupage.html'
+        }
+    })
+})
+</script>
                           </div>
           </div>
 
