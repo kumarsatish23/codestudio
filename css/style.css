@@ -1,9 +1,9 @@
 /* Base */
 body {
-  line-height: 1.7;
+  line-height: 1.5;
   color: gray;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: .75rem;
   font-family: "Verdana", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
 ::-moz-selection {
@@ -117,12 +117,12 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none !important; }
 
 .site-section {
-  padding: 0em 0; }
+  padding: 1em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 0em 0; } }
+      padding: 1em 0; } }
   .site-section.site-section-sm {
-    padding: 0em 0; }
+    padding: 1em 0; }
 
 .site-section-heading {
   font-size: 30px;
