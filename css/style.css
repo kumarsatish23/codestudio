@@ -117,12 +117,12 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: none !important; }
 
 .site-section {
-  padding: 1em 0; }
+  padding: 0em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 1em 0; } }
+      padding: 0em 0; } }
   .site-section.site-section-sm {
-    padding: 1em 0; }
+    padding: 0em 0; }
 
 .site-section-heading {
   font-size: 30px;
@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
       .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close span {
         font-size: 30px;
         display: inline-block;
-        padding-left: 10px;
+        padding-left: 0px;
         padding-right: 0px;
         line-height: 1;
         cursor: pointer;
