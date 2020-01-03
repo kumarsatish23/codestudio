@@ -1,7 +1,7 @@
 /* Base */
 body {
   line-height: 1.5;
-  color: gray;
+  color: #555555;
   font-weight: 300;
   font-size: .75rem;
   font-family: "Verdana", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0);
   content: "";
   position: absolute;
   z-index: 2000;
@@ -152,15 +152,15 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid #ced4da !important; }
 
 .site-footer {
-  padding-top: 17rem;
-  padding-bottom: 4rem;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
   background: #333333; }
   .site-footer p {
-    color: #8c8c8c; }
+    color: #a5a4a4; }
   .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
     color: #fff; }
   .site-footer a {
-    color: #b3b3b3; }
+    color: #555555; }
     .site-footer a:hover {
       color: white; }
   .site-footer ul li {
@@ -221,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-navbar {
   margin-bottom: 0px;
   width: 100%;
-  padding: 15px 0; }
+  padding: 0px 0; }
   .site-navbar .site-logo {
     font-weight: 200;
     line-height: 0;
@@ -548,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 4rem; } }
   .site-blocks-cover .sub-text {
     font-size: 1.4rem;
-    color: gray;
+    color: #555555;
     font-weight: 300; }
     @media (max-width: 991.98px) {
       .site-blocks-cover .sub-text {
@@ -558,10 +558,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1;
     width: calc(100% - 50%);
     top: 0;
-    height: 100%;
+    height: 90%;
     z-index: 2;
     right: 50%;
-    min-height: 600px;
+    min-height: 550px;
     overflow: hidden;
     border-bottom-right-radius: 200px; }
     @media (max-width: 991.98px) {
@@ -629,7 +629,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-weight: 400;
-  color: #b3b3b3; }
+  color: #555555; }
 
 .section-title .title {
   font-size: 2.2rem; }
@@ -656,7 +656,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     color: #000; }
   .service p {
-    color: #999999;
+    color: #555555;
     font-size: .85rem; }
 
 .readmore {
@@ -783,12 +783,12 @@ h1, h2, h3, h4, h5, h6 {
     transition: .3s all ease-in-out; }
 
 .contact-form {
-  padding: 30px;
+  padding: 50px;
   position: relative;
   background: #fff;
   -webkit-box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.1);
-  margin-bottom: -15em; }
+  margin-bottom: -5em; }
 
 .jm-sticky-top {
   position: -webkit-sticky;
@@ -834,7 +834,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     line-height: 1.2; }
     .testimonial .vcard .vcard-text .position {
-      color: #b3b3b3; }
+      color: #555555; }
   .testimonial strong {
     font-weight: 400;
     padding: .3rem 0;
