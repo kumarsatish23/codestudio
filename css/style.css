@@ -542,10 +542,14 @@ h1, h2, h3, h4, h5, h6 {
   .site-blocks-cover h1 {
     font-size: 8rem;
     font-weight: 900;
-    line-height: 1; }
+    line-height: 1;
+    -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: white; }
     @media (max-width: 991.98px) {
       .site-blocks-cover h1 {
-        font-size: 4rem; } }
+        font-size: 4rem;
+        -webkit-text-stroke-width: 3px;
+          -webkit-text-stroke-color: white; } }
   .site-blocks-cover .sub-text {
     font-size: 1.4rem;
     color: #555555;
@@ -556,11 +560,12 @@ h1, h2, h3, h4, h5, h6 {
   .site-blocks-cover .img-wrap {
     position: absolute;
     z-index: -1;
+    width: calc(100% - 50%);
     top: 0;
     height: 90%;
     z-index: 2;
-width: 100%;
-   min-height: 550px;
+    right: 50%;
+    min-height: 550px;
     overflow: hidden;
     border-bottom-right-radius: 200px; }
     @media (max-width: 991.98px) {
@@ -597,7 +602,7 @@ width: 100%;
         .site-blocks-cover .intro .heading {
           margin-left: 0; } }
     .site-blocks-cover .intro .text {
-      padding-left: 50px; }
+      padding-left: 0px; }
       @media (max-width: 991.98px) {
         .site-blocks-cover .intro .text {
           padding-left: 0; } }
