@@ -233,27 +233,22 @@
         id="bootstrapForm"
         method="POST" class="contact-form">
           <div class="section-title text-center mb-5">
+            <span class="sub-title mb-2 d-block">Get In Touch</span>
             <h2 class="title text-primary">Contact Us</h2>
-            <span class="sub-title mb-2 d-block">Drop Down Your Requirements For any Queries Or Orders.</span>
-
           </div>
 
-          <div class="row mb-4">
-            <div class="col-md-6 mb-4 mb-md-0">
-              <fieldset>
+          <div class="row mb-0">
+            <div class="col-md-6 mb-0 mb-md-0">
                       <legend for="1633920210"></legend>
                       <div class="form-group">
                           <input id="2005620554" type="text" name="entry.2005620554" placeholder="Name" class="form-control" required>
                       </div>
-                  </fieldset>
                           </div>
             <div class="col-md-6">
-              <fieldset>
                       <legend for="1770822543"></legend>
                       <div class="form-group">
                           <input id="1166974658" type="tel" placeholder="Phone number" name="entry.1166974658" class="form-control" pattern="[0-9]{10}" required >
                       </div>
-                  </fieldset>
                           </div>
           </div>
 
@@ -270,7 +265,7 @@
 
 
           <div class="row mb-4">
-            <div class="col-12">
+            <div class="col-md-12 mb-4 mb-md-0">
                       <legend for="298075773"></legend>
                           <select id="298075773" name="entry.2086816182" class="form-control">
                             <option selected disabled>Choose Products</option>
@@ -286,13 +281,36 @@
                               <option value="Others">Others</option>
                           </select>
                           </div>
+
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <legend for="1545339814"></legend>
+              <input id="1562739746" type="number" placeholder="Quantity" name="entry.1562739746" class="form-control" pattern="[0-9]$"  >
+
+                          </div>
+                          <div class="col-md-6">
+                            <legend for="1069946754"></legend>
+                                <select id="1069946754" name="entry.1591188254" class="form-control">
+                                  <option selected disabled>Total Order Value</option>
+                                    <option value="Upto 1,000₹">Upto 1,000₹</option>
+                                    <option value="1,000₹ to 3,000₹">1,000₹ to 3,000₹</option>
+                                    <option value="3,000₹ to 10,000₹">3,000₹ to 10,000₹</option>
+                                    <option value="10,000₹ to 20,000₹">10,000₹ to 20,000₹</option>
+                                    <option value="20,000₹ to 50,000₹">20,000₹ to 50,000₹</option>
+                                    <option value="50,000₹ to 1 Lakh₹">50,000₹ to 1 Lakh₹</option>
+                                    <option value="1 Lakh₹ to 2 Lakh₹">1 Lakh₹ to 2 Lakh₹</option>
+                                    <option value="2 Lakh₹ to 5 Lakh₹">2 Lakh₹ to 5 Lakh₹</option>
+                                    <option value="More than 5 Lakh₹">More than 5 Lakh₹</option>
+                                </select>
+                                        </div>
           </div>
 
           <div class="row mb-4">
             <div class="col-12">
                       <legend for="1003298117"></legend>
                       <div class="form-group">
-                        <textarea id="1845161546" name="entry.1845161546" class="form-control" cols="30" rows="4" placeholder="Message"></textarea>
+                          <textarea id="1845161546" name="entry.1845161546" class="form-control" cols="30" rows="4" placeholder="Message"></textarea>
                       </div>
                           </div>
           </div>
@@ -310,23 +328,6 @@
                   <input type="hidden" name="pageHistory" value="0">
 
                   <input class="btn btn-primary btn-md" type="submit" value="Submit">
-                  <script>
-                  $('#bootstrapForm').submit(function (event) {
-    event.preventDefault()
-    var extraData = {}
-    $('#bootstrapForm').ajaxSubmit({
-        data: extraData,
-        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-        error: function () {
-            // Submit of form should be successful but JSONP callback will fail because Google Forms
-            // does not support it, so this is handled as a failure.
-            alert('Form Submitted. Thanks.')
-            // You can also redirect the user to a custom thank-you page:
-            // window.location = 'http://www.mydomain.com/thankyoupage.html'
-        }
-    })
-})
-</script>
                           </div>
           </div>
 
@@ -334,6 +335,7 @@
 
       </div>
     </div> <!-- END .site-section -->
+
 
     <footer class="site-footer">
       <div class="container">
