@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
           color: #dee2e6; }
     .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo {
       float: left;
-      margin-top: 10px;
+      margin-top: 0px;
       margin-left: 0px; }
       .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a {
         display: inline-block;
@@ -495,7 +495,7 @@ h1, h2, h3, h4, h5, h6 {
     .sticky-wrapper .site-navbar a.active {
       color: #fff0; }
   .sticky-wrapper.is-sticky .site-navbar {
-    background-color: #fff0;
+    background-color: #f7c9c9f2;
     -webkit-box-shadow: 0px 0 0px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0 0px 0px rgba(0, 0, 0, 0.1); }
     .sticky-wrapper.is-sticky .site-navbar .site-navigation .site-menu > li {
